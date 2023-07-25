@@ -5,7 +5,12 @@ const app = express();
 
 require("dotenv").config();
 
-app.use(cors());
+const corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
@@ -20,6 +25,3 @@ app.use("/api", routes);
 app.listen(process.env.PORT, function() {
     console.log("API Funcionando");
 })
-
-
-//g6eas1F5vXp6nFf9
