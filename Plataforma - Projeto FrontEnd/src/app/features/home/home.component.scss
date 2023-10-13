@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.panelMain {
+    margin: 0 auto;
+    background-color: black;
+    height: 420px;
+}
+
+.panel-wrapper {
+    color: white;
+    max-width: 490px;
+    position: relative;
+    left: 10%;
+    flex-direction: column;
+    display: flex;
+    gap: 32px;
+    top: 7%;
+}
+
+.mainText {
+    font-size: 44px;
+}
+
+.btn-warning:hover {
+    background-color: rgb(133, 25, 133);
+}
+
+.btn-warning {
+    background-color: purple;
+    border: purple;
+    color: white;
+    max-width: 160px;
+}
+
+.imageWrapper {
+    position: absolute;
+    right: 0;
+}
+
+.customImage{
+    height: 420px;
+    opacity: 65%;
+}

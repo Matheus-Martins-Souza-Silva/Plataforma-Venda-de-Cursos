@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+.MainHeader
+{
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    flex-direction: column;
+}
+
+header {
+    margin: 0 auto;
+}
+
+.mainSpans:hover{
+    color: purple;
+}
+
+.mainSpans {
+    color: white;
+    margin-right: 23px;
+    cursor: pointer;
+}
+
+button {
+    margin-right: 12px;
+}
+
+.btn-warning:hover {
+    background-color: rgb(133, 25, 133);
+}
+
+.btn-warning {
+    background-color: purple;
+    border: purple;
+    color: white;
+}
+
+.customSymbol {
+    height: 60px;
+    margin-right: 60px;
+}
+
+.footer-wrapper {
+    background-color: var(--dark-grey);
+    display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: center;
+}
+
+.rightText {
+    color: white;
+}
