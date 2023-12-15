@@ -8,3 +8,71 @@
         <button class="btn btn-warning"><b>Começar Agora</b></button>
     </div>
 </div>
+
+<!-- <div class="carreiraPanel">
+    <div class="textPanel">
+        <h1><b>Explore As Seguintes </b>
+            <span class="purpleWord"><b>Carreiras</b></span>
+        </h1>
+        <p>Liberte o seu potencial de aprendizado e conquiste a atenção do mercado de trabalho, visando a utilizar as tecnologias mais recentes.</p>
+    </div>
+    <div class="cardTecnologias">
+        <carousel [singleSlideOffset]="false"
+                [interval]="0"
+                [indicatorsByChunk]="true"
+                [isAnimated]="true"
+                [showIndicators]="false">
+                <div class="card-Wrapper">
+                    <slide #carouselTest *ngFor="let profissional of profissionais; let index=index">
+                        <div class="cardPanel">
+                            <a>{{profissional.nome}}</a>
+                            <a *ngFor="let curso of profissional.cursos">• {{curso}}</a>
+                        </div>
+                    </slide>
+                </div>
+        </carousel>
+    </div>
+</div> -->
+
+<div class="carreiraPanel">
+    <div class="textPanel">
+        <h1><b>Explore As Seguintes </b>
+            <span class="purpleWord"><b>Carreiras</b></span>
+        </h1>
+        <p>Liberte o seu potencial de aprendizado e conquiste a atenção do mercado de trabalho, visando a utilizar as tecnologias mais recentes.</p>
+    </div>
+    <div *ngIf="isMobile" class="cardTecnologias">
+        <carousel [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="false"
+                [interval]="0"
+                [indicatorsByChunk]="true"
+                [isAnimated]="true"
+                [showIndicators]="false">
+                <div class="card-Wrapper">
+                    <slide #carouselTest *ngFor="let profissional of profissionais; let index=index">
+                        <div class="cardPanel">
+                            <a>{{profissional.nome}}</a>
+                            <a *ngFor="let curso of profissional.cursos">• {{curso}}</a>
+                        </div>
+                    </slide>
+                </div>
+        </carousel>
+    </div>
+    <div *ngIf="!isMobile" class="cardTecnologias">
+        <carousel [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="false"
+                [interval]="0"
+                [indicatorsByChunk]="true"
+                [isAnimated]="true"
+                [showIndicators]="false">
+                <div class="card-Wrapper">
+                    <slide #carouselTest *ngFor="let profissional of profissionais; let index=index">
+                        <div class="cardPanel">
+                            <a>{{profissional.nome}}</a>
+                            <a *ngFor="let curso of profissional.cursos">• {{curso}}</a>
+                        </div>
+                    </slide>
+                </div>
+        </carousel>
+    </div>
+</div>

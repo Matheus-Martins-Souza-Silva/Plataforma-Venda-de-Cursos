@@ -5,3 +5,71 @@
 
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Meyer Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Adiciona o box sizing para todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Corrige a legibilidade do texto para alguns navegadores */
+/* Esteja ciente de que a legibilidade pode ser afetada em alguns casos */
+body {
+    line-height: 1;
+}
+
+/* Remove a lista de estilo padrão */
+ol, ul {
+    list-style: none;
+}
+
+/* Elementos de hyperlink sem decoração padrão */
+a {
+    text-decoration: none;
+}
+
+/* Ajusta o estilo padrão do cursor para botões e links */
+button, input, select, textarea {
+    cursor: pointer;
+}
+
+/* Garante que os elementos flexíveis se comportem corretamente */
+/* Ajuda a evitar problemas de layout em alguns navegadores mais antigos */
+/* Você pode ajustar isso conforme necessário para atender aos requisitos do seu projeto */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Ajusta a largura máxima da imagem para evitar que ultrapasse os limites dos pais */
+img {
+    max-width: 100%;
+    height: auto;
+}

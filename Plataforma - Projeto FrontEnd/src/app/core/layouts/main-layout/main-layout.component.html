@@ -1,12 +1,18 @@
-<div class="MainHeader">
+<div class="MainHeader container-fluid">
     <header>
-        <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*cPh7ujRIfcHAy4kW2ADGOw.png" class="customSymbol">
-        <span class="mainSpans">Cursos</span>
-        <span class="mainSpans">Comunidade</span>
-        <span class="mainSpans">Projetos</span>
-        <button class="btn btn-outline-light"><b>Entrar</b></button>
-        <button class="btn btn-warning"><b>Criar Conta</b></button>
+        <div class="imgIcon">
+            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*cPh7ujRIfcHAy4kW2ADGOw.png" class="customSymbol">
+        </div>
+        <div class="spans-wrapper">
+            <span class="mainSpans">Cursos</span>
+            <span class="mainSpans">Comunidade</span>
+            <span class="mainSpans">Projetos</span>
+        </div>
     </header>
+    <div class="buttons">
+        <button class="btn btn-outline-light" (click)="openLoginModal()"><b>Entrar</b></button>
+        <button class="btn btn-warning" (click)="openRegisterModal()"><b>Criar Conta</b></button>
+    </div>
 </div>
 
 <main>

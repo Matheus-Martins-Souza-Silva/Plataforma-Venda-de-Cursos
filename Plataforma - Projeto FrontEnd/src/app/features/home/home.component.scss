@@ -4,20 +4,26 @@ body {
 }
 
 .panelMain {
-    margin: 0 auto;
     background-color: black;
     height: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
 }
 
 .panel-wrapper {
     color: white;
-    max-width: 490px;
-    position: relative;
-    left: 10%;
+    padding: 80px;
+    display: inline-block;
     flex-direction: column;
-    display: flex;
-    gap: 32px;
-    top: 7%;
+    width: 40%;
+    //border: solid 1px red;
+}
+
+.textPanel {
+    max-width: 40%;
+    //border: solid 1px blue;
 }
 
 .mainText {
@@ -32,15 +38,272 @@ body {
     background-color: purple;
     border: purple;
     color: white;
-    max-width: 160px;
+    max-width: 25%;
 }
 
 .imageWrapper {
     position: absolute;
     right: 0;
+    //border: solid 1px blue;
 }
 
 .customImage{
+    width: 100%;
     height: 420px;
-    opacity: 65%;
+    opacity: 0.65;
+}
+
+.carreiraPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-purple);
+    padding: 30px;
+}
+
+.carreiraPanel .textPanel h1 {
+    color: white;
+    text-align: center;
+}
+
+.carreiraPanel .textPanel p {
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.carreiraPanel .cardTecnologias {
+    width: 100%; //Need to test
+    height: 22vw; //Testing
+    //border: solid 1px red;
+    display: flex;
+    justify-content: center;
+}
+
+.carreiraPanel .textPanel h1 span {
+    color: var(--purple-text)
+}
+
+.carreiraPanel .cardTecnologias carousel {
+    width: 100%;
+    //border: solid 1px darkviolet;
+}
+
+.carreiraPanel .cardTecnologias carousel slide {
+    padding-left: 12px;
+    //border: solid 1px darkcyan;
+}
+
+.carreiraPanel .cardTecnologias carousel .card-Wrapper {
+    margin: 0 auto;
+    //border: solid 1px yellow;
+    height: 50%; //21.7vw;
+    min-width: 80%;
+    max-width: 80%;
+    justify-content: center;
+} 
+
+.carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-color);
+    border-radius: 12px;
+    //border: solid 1px blue;
+    height: 20vw;
+    max-width: 100%;
+}
+
+.carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel a:first-child {
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    padding: 10px;
+}
+
+.carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel a {
+    color: white;
+    font-size: 18px;
+    padding-left: 12px;
+    position: static;
+    line-height: 1.6;
+}
+
+/*NEED FIX CAROUSEL*/
+
+/*@media screen and (max-width: 720px) {
+    .panel-wrapper {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 12px;
+        text-align: justify;
+    }
+    /*.carreiraPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-purple);
+    padding: 30px;
+    }
+
+    .carreiraPanel .textPanel h1 {
+        color: white;
+        text-align: center;
+    }
+
+    .carreiraPanel .textPanel p {
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .carreiraPanel {
+        border: solid 1px red;
+    }
+    .carreiraPanel .textPanel {
+        display: flex;
+        width: 100vw;
+        padding: 0px;
+        border: solid 1px blue;
+    }
+
+    .carreiraPanel .textPanel p {
+        padding: 0px;
+        text-align: justify;
+    }
+}*/
+
+@media (max-width: 1200px) {
+    .panel-wrapper {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 12px;
+        text-align: justify;
+    }
+    .customImage {
+        width: 100vw;
+    }
+    .carreiraPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-purple);
+    padding: 30px;
+    }
+
+    .carreiraPanel .textPanel h1 {
+        color: white;
+        text-align: center;
+    }
+
+    .carreiraPanel .textPanel p {
+        /*color: white;
+        padding: 25px;
+        text-align: center;*/
+        display: none;
+    }
+
+    .carreiraPanel {
+        margin: 0 auto;
+        //border: solid 1px red;
+    }
+    .carreiraPanel .textPanel {
+        display: flex;
+        width: 100vw;
+        padding: 0px;
+        //border: solid 1px blue;
+    }
+
+    .carreiraPanel .textPanel p {
+        padding: 0px;
+        text-align: justify;
+    }
+
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel {
+        //border: 1px solid blue;
+    }
+
+    .carreiraPanel .cardTecnologias carousel {
+        //border: 1px solid red;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .carreiraPanel .cardTecnologias carousel slide {
+        width: 100%;
+        //border: 1px solid darkcyan;
+    }
+
+    .carousel-inner .cardPanel {
+        width: 100%;
+        height: auto;
+      }
+    
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper {
+        //border: 1px solid yellow;
+    } 
+    
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel {
+        //border: 1px solid greenyellow;
+    }
+    
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel a {
+        //border: 1px solid orange;
+    }
+
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel a:first-child {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .carreiraPanel .cardTecnologias {
+        height: auto;
+        //border: 1px solid greenyellow;
+    }
+    .carreiraPanel .cardTecnologias carousel {
+        width: 100%;
+        height: auto;
+       // border: 1px solid blue;
+    }
+
+    .carreiraPanel .cardTecnologias carousel slide {
+        width: 150%;
+        //border: 1px solid yellow;
+    }
+
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper {
+        width: 150%;
+        height: auto;
+        //border: 1px solid red;
+    }
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel {
+        height: 248px;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .carreiraPanel .cardTecnologias {
+        border: 1px solid greenyellow;
+    }
+    .carreiraPanel .cardTecnologias carousel {
+        border: 1px solid blue;
+    }
+
+    .carreiraPanel .cardTecnologias carousel slide {
+        border: 1px solid yellow;
+    }
+
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper {
+        width: 128px;
+        border: 1px solid red;
+    }
+    .carreiraPanel .cardTecnologias carousel .card-Wrapper .cardPanel {
+    }
 }

@@ -1,16 +1,16 @@
 @import "../../variables.scss";
-
 .MainHeader
 {
     background-color: var(--dark-grey);
     display: flex;
     justify-content: center;
-    height: 65px;
-    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 header {
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .mainSpans:hover{
@@ -23,8 +23,13 @@ header {
     cursor: pointer;
 }
 
+.spans-wrapper {
+    display: flex;
+    margin-left: 5vw;
+}
+
 button {
-    margin-right: 12px;
+    margin-right: 12px
 }
 
 .btn-warning:hover {
@@ -37,9 +42,12 @@ button {
     color: white;
 }
 
+.buttons {
+    display: flex;
+}
+
 .customSymbol {
     height: 60px;
-    margin-right: 60px;
 }
 
 .footer-wrapper {
@@ -52,4 +60,32 @@ button {
 
 .rightText {
     color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*.MainHeader * {
+    border: 1px solid red;
+}
+
+.buttons * {
+    border: 1px solid blue;
+}*/
+
+@media screen and (max-width: 720px) {
+    .MainHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .buttons {
+        margin-top: auto;
+        display: flex;
+        position: relative;
+        bottom: 4px;
+    }
 }
